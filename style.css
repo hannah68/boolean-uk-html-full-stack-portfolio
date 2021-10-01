@@ -1,0 +1,281 @@
+:root{
+    --primary-color:rgb(78, 182, 172);
+    --primary-text-color: rgb(229, 255, 255);
+    --secondary-color: rgb(255,255,255);
+    --tertiary-color: rgb(255,235,238);
+    --redish-color: rgb(174,20,87);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-size: 62.5%;
+}
+
+nav{
+    height: 4rem;
+    background-color:var(--primary-color);
+    padding: 2rem;
+    font-size: 1.8rem;
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a{
+    padding:.5rem 1rem;
+    text-decoration: none;
+    color:var(--primary-color);
+    background-color: var(--primary-text-color);
+    margin-right: 2rem;
+    border-radius: 8px;
+}
+
+.logo{
+    color:var(--primary-text-color);
+    font-weight: bold;
+}
+
+header{
+    background-color:var(--primary-color);
+    height: 100vh;
+    width: 100%;
+    text-align: left;
+}
+
+.header-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45rem;
+    height: 56rem;
+    margin: 0 auto;
+    word-spacing: 5px;
+    color:var(--primary-text-color);
+}
+
+.header-info .bold{
+    color: #000;
+}
+
+header h1{
+    font-size: 8rem;
+}
+
+header p{
+    font-size: 2rem;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+/* About section */
+.about-container{
+    font-size: 2rem;
+    margin: 5rem;
+}
+.about-container h2{
+    text-align: center;
+}
+
+.about-info{
+    width: 50rem;
+    margin: 1rem auto;
+}
+
+.about-skill{
+    width: 50rem;
+    margin: 3rem auto;
+}
+
+.skills{
+    display: flex;
+    gap: 6rem;
+}
+.skills ul{
+    margin-left: 4rem;
+}
+/* third section */
+
+.third-container{
+    height: 50rem;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    background-color: var(--tertiary-color);
+    font-size: 2rem;
+}
+
+.third-container h4{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    margin: 2rem 0;
+}
+
+.card-container{
+    width: 80rem;
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    gap: 3rem;
+}
+.card{
+    border: 5px solid var(--redish-color);
+    padding: 2rem;
+}
+
+.card h4{
+    margin-bottom: 1rem;
+}
+
+.card button{
+    background-color: var(--redish-color);
+    color: #ffff;
+    display: block;
+    padding: 1rem;
+    width: 100%;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.card a{
+    text-decoration: none;
+    text-align: center;
+    color: var(--redish-color);
+    display: block;
+    margin-top: 1rem;
+}
+
+/* experience container */
+.experience-container{
+    height: 50rem;
+    border-top: 3px solid #000;
+    font-size: 2rem;
+}
+
+.experience-container h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 4rem;
+}
+.experience-info{
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem auto;
+    gap: 3rem;
+}
+
+.experience-info a{
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--redish-color);
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+/* footer section */
+footer{
+    background-color: #000;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 3rem 0;
+    margin-top: 3rem;
+}
+
+footer p{
+    margin-left: 2rem;
+}
+
+/* media quary */
+
+@media screen and (max-width:1200px){
+    header h1{
+        font-size: 4rem;
+    }
+    
+    header p{
+        font-size: 2rem;
+    }
+    .header-info{
+        width: 30rem;
+        height: 30rem;
+    }
+    .card-container{
+        width: 50rem;
+        gap: 2rem;
+    }
+    .card{
+        padding: 1rem;
+    }
+    .third-container{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:1200px){
+    header{
+        height: auto;
+    }
+    header h1{
+        font-size: 2.5rem;
+    }
+    
+    header p{
+        font-size: 1.5rem;
+    }
+    .card-container{
+        width: 50rem;
+        gap: 2rem;
+    }
+    
+    .third-container{
+        font-size: 1.3rem;
+        height: 70rem;
+    }
+    .card-container{
+        width: 45rem;
+        flex-direction: column;
+    }
+    .experience-container{
+        height: auto;
+    }
+    .experience-info{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .about-container{
+        font-size: 1.5rem;
+        margin: 5rem 0;
+    }
+    
+    .about-info{
+        width: 30rem;
+    }
+    .about-skill{
+        width: 30rem;
+    }
+    .experience-container h2{
+        font-size: 1.8rem;
+    }
+}
